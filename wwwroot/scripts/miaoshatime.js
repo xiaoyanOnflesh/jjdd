@@ -1,5 +1,5 @@
 // 创建并获取目标时间的时间戳
-    var targetDate = new Date('2017-09-27 00:00:00').getTime();
+    var targetDate = new Date('2017-09-28 00:00:00').getTime();
     // 获取当前时间的时间戳
     var nowDate = new Date().getTime();
     // 获取时间差(s)
