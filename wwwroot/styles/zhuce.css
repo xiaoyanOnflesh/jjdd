@@ -1,0 +1,143 @@
+html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            min-width: 1200px;
+        }
+
+        .hyzc_demo {
+            width: 100%;
+            height: 110px;
+            /*background-color: palevioletred;*/
+            border-bottom: 8px solid #F1F1F1;
+        }
+
+        .hyzc {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            /*background-color: red;*/
+        }
+
+        .hyzc>div:nth-of-type(1){
+            display: flex;
+            width: 50%;
+            height: 100%;
+            /*background-color: red;*/
+            align-items: center;
+        }
+        .yiyou{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 17px;
+        }
+        .hyzc>div:nth-of-type(1) img{
+            height: 50px;
+            display: inline-block;
+        }
+        .hyzc>div:nth-of-type(1) span{
+            font-size: 24px;
+            display: inline-block;
+            line-height: 50px;
+            margin-left: 33px;
+            margin-top: 20px;
+        }
+
+        .form_demo {
+            width: 100%;
+            height: 700px;
+        }
+        .form_content{
+            width: 830px;
+            height: 100%;
+            /*background-color: yellow;*/
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .form_content>div{
+            width: 39%;
+            height: 100%;
+            /*background-color: pink;*/
+        }
+         .form_content>div:nth-of-type(1){
+            width: 60%;
+            height: 100%;
+            /*background-color: pink;*/
+        }
+        .form_left{
+            border-right: 1px solid gainsboro;
+            padding-right: 100px;
+        }
+         .form_left div{
+            width: 400px;
+            height: 55px;
+            /*background-color: red;*/
+            border: 1px solid gainsboro;
+            margin: 30px auto;
+        }
+        .form_left div label{
+            width: 110px;
+            height: 52px;
+            text-align: center;
+            line-height: 52px;
+            letter-spacing: 2px;
+            font-size: 15px;
+            color: #666666;
+        }
+        .CHina{
+            display: inline-block;
+            border-right: 1px solid gainsboro;
+        }
+        .yanzhen{
+            width: 100px;
+            height: 100%;
+            border: none;
+            background-color: #F2F2F2;
+        }
+        .form_left input{
+            height: 100%;
+            width: 180px;
+            border: none;
+            outline: none;
+        }
+        .form_left div:nth-last-of-type(1) button{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            color: white;
+           border: none;
+           font-size: 18px;
+        }
+        .form_right>div{
+            display: flex;
+            justify-content: center;
+            margin-top: 
+        }
+        .form_right>div>div{
+              display:inline-block;
+              /*line-height: 40px;*/
+              margin-top: 50px;
+        }
+        .form_right>div>div:nth-of-type(2){
+              width: 100px;
+              height: 40px;
+              /*background-color: red;*/
+        }
+        .fanzi{
+            width: 40px;
+            height: 40px;
+            background-image: url('../img/icon.png');
+            background-size: 400px 170px;
+            background-position: 0 -43px;
+        }
+        .diqiu{
+            width: 40px;
+            height: 40px;
+            background-image: url('../img/icon.png');
+            background-size: 400px 170px;
+            background-position: -48px -43px;
+        }

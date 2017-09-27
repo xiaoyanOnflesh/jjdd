@@ -1,0 +1,283 @@
+.faxiandemo {
+            width: 1200px;
+            height: 450px;
+            /*background-color: pink;*/
+            margin: 25px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .big {
+            font-size: 25px;
+        }
+
+        .faxiandemo span {
+            color: white;
+        }
+
+        .faxiandemo>div {
+            flex: 0 0 32.5%;
+            background-color: white;
+        }
+
+        .faxian_logo {
+            width: 100%;
+            height: 55px;
+            background-color: #4897A0;
+            position: relative;
+            /*border-top-left-radius: 35px;*/
+        }
+         
+        .faxian_logo>div {
+            margin-left: 25px;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+         .faxian_content{
+             width: 100%;
+             height:380px;
+             /*background-color: red;*/
+         }
+         .faxian_content>div{
+             width: 49.2%;
+             height: 32%;
+             display: inline-block;
+             /*background-color: yellow;*/
+             /*border: 1px solid gray;*/
+             margin: 1px 0 0 1px;
+         }
+         .faxian_content>div{
+             position: relative;
+         }
+         .faxian_content>div>p{
+             position: absolute;
+             top: 15px;
+             left: 15px;
+             width: 70px;
+             color: #3A8C95;
+         }
+         .faxian_content>div img{
+             position: absolute;
+             bottom: 10px;
+             right: 10px;
+
+         }
+         
+        .huimai_logo {
+            width: 100%;
+            height: 55px;
+            background-color: #76478D;
+            /*border-top-left-radius: 35px;*/
+            position: relative;
+        }
+         
+        .huimai_logo>div {
+            margin-left: 25px;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .huimai_content{
+            width: 100%;
+             height:380px;
+             /*background-color: yellow;*/
+             position: relative;
+        } 
+       
+        .paihan_logo {
+            width: 100%;
+            height: 55px;
+            background-color: #E66905;
+            /*border-top-left-radius: 35px;*/
+            position: relative;
+            
+        }  
+        .paihan_logo>div {
+            margin-left: 25px;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+        .paihan_content{
+            width: 100%;
+            height: 380px;
+            /*background-color: pink;*/
+        } 
+        .ph_pa{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            position: relative;
+        }
+        .ph_bt{
+            width: 100%;
+            height: 35px;
+            /*background-color: yellow;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .ph_bt a{
+            color: black;
+        }
+        .ph_bt>p{
+            width: 20%;
+            text-align: center;
+          border-right: 1px solid gray;
+        }
+        .ph_bt>p:nth-last-of-type(1){
+            border-right:none;
+        }
+        .red_gundong{
+            width: 20%;
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .ph_neirong{
+            position: relative;
+        }
+        .yc{
+            /*width: 150px;*/
+            height: 50px;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .sjtp_rq{ 
+            width: 100%;
+            height: 360px;
+            background-color: white;
+            display: flex;
+            flex-wrap:wrap;
+            position: absolute;
+            top: 0;
+            /*display: none;*/
+        } 
+        .sjtp_div{
+            border: 1px solid gainsboro;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .haha{
+            width: 80%;
+            margin-top: 20px;
+        }
+
+
+         /*---------会买的轮播样式*/
+        #huimai_lunbo {
+            width: 100%;
+            height: 100%;
+            /*border: 1px solid red;*/
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .imgBox_hm {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .imgBox_hm>div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*display: none;*/
+        }
+
+        .imgBox_hm>div>div {
+            width: 100%;
+            height: 50%;
+            background-color: white;
+            
+        }
+
+        .imgBox_hm>div>div:nth-of-type(2) {
+            background-color: white;
+            border-top: 1px solid gainsboro
+        }
+
+        .imgBox_show {
+            display: inline-block;
+        }
+
+        .indicators_hm {
+            position: absolute;
+            left: 150px;
+            bottom: 10px;
+        }
+
+        .buttons_hm {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .indicators_hm span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: gray;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 23px;
+            margin-left: 5px;
+        }
+
+        .indicators_hm span.current {
+            background-color: red;
+        }
+
+        #prev_hm{
+            width: 25px;
+            height: 50px;
+            background-color: gainsboro;
+            z-index: 100;
+            top: 150px;
+            left: 0;
+            position: absolute;
+            line-height: 50px;
+        }
+        #next_hm{
+            width: 25px;
+            height: 50px;
+            background-color: gainsboro;
+            z-index: 100;
+            top: 150px;
+            right: 0;
+            position: absolute;
+            line-height: 50px;
+        }
+
+        .huimai_bt {
+            text-align: center;
+            color: gray;
+        }
+
+        .tupian {
+            margin-top: 20px;
+        }
+
+        .tupian img {
+            margin-left: 14px;
+        }

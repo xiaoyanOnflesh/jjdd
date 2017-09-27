@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="xiaoyan">
+    <title></title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./styles/denglu.css">
+    <link rel="stylesheet" href="./styles/zhuce.css">
+    <script src="./js/jquery.cookie.js"></script>
+    <style>
+        
+.qiye{
+    line-height: 40px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="hyzc_demo">
+        <div class="hyzc">
+            <div>
+                <img src="./img/logo-201305-b.png" alt="">
+                <span>欢迎注册</span>
+            </div>
+            <p class="yiyou">已有账号？<span><a href="./denglu.html">请登录</a></span></p>
+        </div>
+    </div>
+    <div class="form_demo">
+        <div class="form_content">
+            <div class="form_left">
+                <form action="/user/zhuce" method="post">
+                    <div>
+                        <label for="">用户名</label>
+                        <input type="text" placeholder="您的账户名和登录名" name="name" required>
+                    </div>
+                    <div>
+                        <label for="">设置密码</label>
+                        <input type="password" placeholder="建议至少使用两种字符组合" name="mima" required>
+                    </div>
+                    <div>
+                        <label for="">确认密码</label>
+                        <input type="password" placeholder="请再次输入密码" name="affirm" required>
+                    </div>
+                    <div>
+                        <label for="" class="CHina">中国0086</label>
+                        <input type="text" placeholder="建议使用常用手机" name="shouji" required>
+                    </div>
+                    <div>
+                        <label for="">验证码</label>
+                        <input type="text" placeholder="请输入验证码" >
+                        <button class="yanzhen">验证码</button>
+                    </div>
+                    <div>
+                        <label for="">手机验证码</label>
+                        <input type="text" placeholder="请输入手机验证码" >
+                        <button class="yanzhen">获取验证码</button>
+                    </div>
+                    <div>
+                        <button type="submit">立即注册</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_right">
+                <div class="xian">
+                    <div class="fanzi"></div>
+                    <div class="qiye">企业用户注册</div>
+                </div>
+                <div>
+                    <div class="diqiu"></div>
+                    <div>INTERNATIONAL<br/>CUSTOMERS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dengludemo">
+      <div class="denglu_footer">
+            <span>
+                <span>关于我们</span><span>|</span>
+                <span>联系我们</span><span>|</span>
+                <span>人才招聘</span><span>|</span>
+                <span>商家入驻</span><span>|</span>
+                <span>广告服务</span><span>|</span>
+                <span>手机京东</span><span>|</span>
+                <span>友情链接</span><span>|</span>
+                <span>销售联盟</span><span>|</span>
+                <span>京东社区</span><span>|</span>
+                <span>京东公益</span><span>|</span>
+                <span>English Site</span><span>|</span>
+            </span>
+            <p>Copyright © 2004-2017  京东JD.com 版权所有</p>
+        </div>
+    </div>
+
+    <script>
+     $('form').submit(function (e) {
+            e.preventDefault();
+            var password = $(':password').map(function () {
+                return $(this).val()
+            })
+            if (password[0] == password[1]) {
+                $.post(this.action, $(this).serialize(), (data) => {
+                    alert(data.message); //注册成功
+                    if (data.code == 'success') {
+                        location.href = '/denglu.html';
+                    }
+                })
+            } else {
+                alert('两次密码输入不一致,请重新输入')
+            }
+        })
+    </script>
+</body>
+
+</html>

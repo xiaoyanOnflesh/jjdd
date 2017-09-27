@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="xiaoyan">
+    <title></title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/fixed.css">
+    <link rel="stylesheet" href="./styles/adver.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/lunbodemo.css">
+    <link rel="stylesheet" href="./styles/miaoshademo.css">
+    <link rel="stylesheet" href="./styles/faxiandemo.css">
+    <link rel="stylesheet" href="./styles/lingquandemo.css">
+    <link rel="stylesheet" href="./styles/paihanbang_lunbo.css">
+    <link rel="stylesheet" href="./styles/rightfixed.css">
+    <link rel="stylesheet" href="./styles/middel_guangao.css">
+    <link rel="stylesheet" href="./styles/xiangpingzhi.css">
+    <link rel="stylesheet" href="./styles/aishenghuo.css">
+    <link rel="stylesheet" href="./styles/gengduo.css">
+    <link rel="stylesheet" href="./styles/dibu.css">
+    <link rel="stylesheet" href="./styles/goutese.css">
+    <link rel="stylesheet" href="./styles/zuoce_nav.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./scripts/jquery.plugin.min.js"></script>
+    <script src="./scripts/jquery.countdown.min.js"></script>
+    <script src="./scripts/jquery.countdown-zh-CN.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+
+    <style>
+        /*先设置某些模块的图片隐藏*/
+
+        .faxiandemo img,
+        .lingquandemo img,
+        .rightfixed img,
+        .middel_guangao img,
+        .xiangpingzhi img,
+        .aishenghuo img,
+        .middel_guangao img,
+        .meiguanggou img {
+            /*opacity: 0;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fixed">
+        <div>
+            <img src="./img/doglogo.png" alt="" />
+            <form action="#" method="">
+                <input type="text" placeholder="输入关键字搜索" />
+                <button><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="myScrollspy">
+        <ul class="left_showc">
+            <a href="#floor_xpz">
+                <li>享品质</li>
+            </a>
+            <a href="#floor_fs">
+                <li>服饰美妆</li>
+            </a>
+            <a href="#floor_0">
+                <li>家电手机</li>
+            </a>
+            <a href="#floor_2">
+                <li>电脑数码</li>
+            </a>
+            <a href="#floor_4">
+                <li>3 C运动</li>
+            </a>
+            <a href="#floor_5">
+                <li>爱吃</li>
+            </a>
+            <a href="#floor_7">
+                <li>母婴家居</li>
+            </a>
+            <a href="#floor_8">
+                <li>图书汽车</li>
+            </a>
+            <a href="#floor_10">
+                <li>游戏金融</li>
+            </a>
+            <a href="#floor_12">
+                <li>旅行健康</li>
+            </a>
+            <a href="#floor_mgg">
+                <li>还没逛够</li>
+            </a>
+            <a href="javascript:window.scrollTo(0,0);">
+                <li>顶部</li>
+            </a>
+        </ul>
+    </div>
+
+
+    <div class="adver">
+        <div class="adver_content">
+            <img src="http://img11.360buyimg.com/da/jfs/t8902/260/2112427565/101989/c52b7cd5/59c52db3N2a8edf8c.jpg" alt="">
+            <span class="close" id="close">X</span>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="navchild">
+            <ul style="height: 100%;"><span id="adress"><img src="./img/map_pin_alt_16 (1).png" alt="" style="height:18px;"><span class="text_bian">北京</span>
+                <div class="adress">
+
+                </div>
+                </span>
+            </ul>
+            <ul class="navchild_right">
+                <span class="nihao"><a href="./denglu.html">您好,请登录</a></span>
+                <span class="red_text"><a href="./zhuce.html">免费注册</a></span>|
+                <span>我的订单</span>|
+                <span class="showmenu" id="mydingdan">我的京东<span class="glyphicon glyphicon-menu-down"></span>
+                  <div class="myJD">
+                    <ul>
+                        <li>待处理定单</li>
+                        <li>返修退货</li>
+                        <li>降价商品</li>
+                    </ul>
+                    <ul>
+                        <li>消息</li>
+                        <li>我的问答</li>
+                        <li>我的关注</li>
+                    </ul>
+                    <ul>
+                        <li>我的京豆</li>
+                        <li>我的白条</li>
+                    </ul>
+                    <ul>
+                        <li>我的优惠券</li>
+                        <li>我的理财</li>
+                    </ul>
+                  </div>
+                </span>|
+                <span>京东会员</span>|
+                <span>企业采购</span>|
+                <span class="showmenu" id="myserver">客户服务<span class="glyphicon glyphicon-menu-down"></span>
+                  <div class="myserver">
+                   <div>
+                    <ul>
+                        <p>客户</p>
+                        <li>帮助中心</li>
+                        <li>在线客服</li>
+                        <li>电话客服</li>
+                        <li>金融资讯</li>
+                    </ul>
+                    <ul>
+                        <li>售后服务</li>
+                        <li>意见建议</li>
+                        <li>客服邮箱</li>
+                        <li>售全球客服</li>
+                    </ul>
+                   </div>
+                   <div>
+                    <ul>
+                        <p>商家</p>
+                        <li>合作招商</li>
+                        <li>商家后台</li>
+                        <li>商家帮助</li>
+                    </ul>
+                    <ul>
+                        <li>京东商学院</li>
+                        <li>京麦工作台</li>
+                        <li>规则平台</li>
+                    </ul>
+                   </div>
+                  </div>
+                </span>|
+                <span class="showmenu" id="daohan">网站导航<span class="glyphicon glyphicon-menu-down"></span>
+                  <div class="daohan_parname">
+                       <div class="daohan"></div>
+                  </div>
+                </span>|
+                <span>手机京东</span>
+            </ul>
+
+
+
+            
+        </div>
+    </div>
+
+    <div class="header">
+        <img src="./img/京东小狗.png" alt="" class="logo">
+        <div class="findbox">
+            <div class="findbox_content">
+                <form action="#" method="">
+                    <div class="findbox_content_into">
+                        <input type="text" class="chazhao" placeholder="输入关键字查询...">
+                        <span class="zhaoxiangjispan"><img src="./img/照相机.png" alt="" class="zhaoxiangji"></span>
+                        <button class="click"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="shopping">
+                <span class="glyphicon glyphicon-shopping-cart">我的购物车</span>
+            </div>
+            <div class="erweima">
+                <img src="./img/二维码.png" alt="" style="width:80%">
+            </div>
+        </div>
+        <div class="keyword">
+            <span style="color:red;">陆游季</span>
+            <span>联合满减</span>
+            <span>农畜畜牧</span>
+            <span>3件7折</span>
+            <span>预约省800</span>
+            <span>唇彩唇蜜</span>
+            <span>ipone7plus</span>
+            <span>满减折上折</span>
+            <span>壁纸</span>
+        </div>
+        <div class="keyword_2">
+            <div>
+                <a href=""><span>秒杀</span></a>
+                <a href=""><span>闪购</span></a>
+                <a href=""><span>优惠券</span></a>
+                <a href=""><span>拍卖</span></a>
+                <a href=""><span>服装城</span></a>
+                <a href=""><span>京东超市</span></a>
+                <a href=""><span>生鲜</span></a>
+                <a href=""><span>全球购</span></a>
+                <a href=""><span>京东金融</span></a>
+            </div>
+            <div>
+                <img src="./img/扶贫.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="lunbodemo">
+        <div class="leftkeyword">
+            <ul class="leftmenu">
+                <!--左边一级菜单动态渲染-->
+            </ul>
+            <div class="leftmenu_erji">
+                <div class="pink_menu"><a href="">11111</a></div>
+                <div class="black_menu"></div>
+                <div class="green_menu"></div>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="lunbo">
+                <div id="slideBox">
+                    <div class="imgBox">
+                        <img src="./img/lunbo_1.jpg" alt="" class="imgBox_show" style="display:block">
+                        <img src="./img/lunbo_2.jpg" alt="">
+                        <img src="./img/lunbo_3.jpg" alt="">
+                        <img src="./img/lunbo_4.jpg" alt="">
+                        <img src="./img/lunbo_5.jpg" alt="">
+                        <img src="./img/lunbo_6.jpg" alt="">
+                        <img src="./img/lunbo_7.jpg" alt="">
+                        <img src="./img/lunbo_8.jpg" alt="">
+                    </div>
+                    <div class="indicators">
+                        <span class="current"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="buttons">
+                        <span id="prev"><span class="glyphicon glyphicon-menu-left"></span></span>
+                        <span id="next"><span class="glyphicon glyphicon-menu-right"></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_bottom">
+                <div class="middle_bottom_left">
+                    <img src="./img/1.png" alt="">
+                </div>
+                <div class="middle_bottom_right">
+                    <img src="./img/2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="rightkeyword">
+            <div class="rightkeyword_top">
+                <div class="rkw_top">
+                    <div>
+                        <img class="touxiang" src="./img/moren.jpg" alt="" style="width:50px;border-radius:50%">
+                    </div>
+                    <div class="rkw_top_bottom">
+                        <p style="width:100px">Hi,欢迎来到京</p>
+                        <span class="nihao"><a href="./denglu.html">登录</a></span>
+                        <span class="tuichu"><a href="./zhuce.html">注册</a></span>
+                    </div>
+                </div>
+                <div class="rkw_bottom">
+                    <div><span class="">新人福利</span></div>
+                    <div><span class="">PLUS会员</span></div>
+                </div>
+            </div>
+            <div class="rightkeyword_middle">
+                <div class="rkw_m_child">
+                    <span class="rkw_m_child_in">
+                    <a href=""><span id="chuxiao">促销</span></a>|
+                    <a href=""><span id="gonggao">公告</span></a>
+                    </span>
+                    <span>更多</span>
+                </div>
+                <p class="huadong"></p>
+                <ul class="chuxiao">
+                    <a href="">
+                        <li>索粉节！为信仰低至6折！</li>
+                    </a>
+                    <a href="">
+                        <li>品质家纺跨店2件8折</li>
+                    </a>
+                    <a href="">
+                        <li>家纺自营满199减100</li>
+                    </a>
+                    <a href="">
+                        <li>万件好物1元秒</li>
+                    </a>
+                </ul>
+                <ul class="gonggao">
+                    <a href="">
+                        <li>京东扶贫频道正式上线运营</li>
+                    </a>
+                    <a href="">
+                        <li>京东全球售升级 新域名同步..</li>
+                    </a>
+                    <a href="">
+                        <li>京东会员体系全新升级</li>
+                    </a>
+                    <a href="">
+                        <li>《京东隐私政策》修改公告</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="rightkeyword_bottom">
+                <table class="rkw_b_in">
+                    <tr class="chulai_show">
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_1"></div>话费</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_2"></div>机票</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_3"></div>酒店</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_4"></div>游戏</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_5"></div>企业购</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_6"></div>加油卡</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_7"></div>电影票</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_8"></div>火车票</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_9"></div>众筹</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_10"></div>理财</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_11"></div>礼品卡</a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <div class="xuebi weizhi_12"></div>白条</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="huafei_show">
+                     <div>
+                         <p class="hf_red"></p>
+                         <p class="hf_sm">
+                             <span>话费</span>
+                             <span>机票</span>
+                             <span>酒店</span>
+                             <span>游戏</span>
+                         </p>
+                     </div>
+                     <p class="huafei_close">X</p>
+                     <div class="huafei_content">
+                        <div>
+                            <p class="chongzhi">
+                                <span style="background-color:red;color:white">话费充值</span>
+                                <span>流量充值</span>
+                                <span>套餐变更</span>
+                            </p>
+                            <div>
+                                <label for="">号码</label>
+                                <input type="text" placeholder="移动/联通/电信">
+                            </div>
+                            <div>
+                                <label for="">面值</label>
+                                <input type="number" placeholder="100元">
+                                <span style="color:red">￥98.0-￥100.0</span>
+                            </div>
+                            <button class="kuaisu">快速充值</button>
+                            <div>
+                                <img src="http://misc.360buyimg.com/virtuals/squares/1.0/css/i/iframe-hot.png" alt="">
+                                <span>抢50元话费券</span>
+                            </div>
+                        </div>
+                     </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="ganggao_tp_left"></div>
+        <div class="ganggao_tp_right"></div>
+    </div>
+
+    <div class="miaoshademo">
+        <div class="miaosha">
+            <div class="leftjiao_logo"></div>
+            <div class="miaobeijing"></div>
+            <div class="shizhong_logo"></div>
+            <div class="miaoshacontent">
+                <div>
+                    <span class="jingdong_text">京东秒杀</span>
+                    <span>总有你想不到的低价<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+                <div>
+                    <span class="daojishi"></span>
+                </div>
+            </div>
+        </div>
+        <div class="miaosha_lunbo_demo">
+            <div class="miaosha_lunbo">
+                <div id="miaosha_Box">
+                    <div class="ms_imgBox">
+                        <div class="img">
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img12.360buyimg.com/n4/s130x130_g9/M03/05/04/rBEHalBFU0UIAAAAAAHGDjTuIY0AABAMwKcZPEAAcYm020.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img13.360buyimg.com/n4/s130x130_jfs/t5575/157/1788433153/332394/c0b0b575/592a11e1Ne4910dd8.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img11.360buyimg.com/n4/s130x130_jfs/t3811/81/683415179/202613/98358911/58182d29N61d358d1.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img12.360buyimg.com/n4/s130x130_g9/M03/05/04/rBEHalBFU0UIAAAAAAHGDjTuIY0AABAMwKcZPEAAcYm020.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img13.360buyimg.com/n4/s130x130_jfs/t5575/157/1788433153/332394/c0b0b575/592a11e1Ne4910dd8.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img11.360buyimg.com/n4/s130x130_jfs/t3811/81/683415179/202613/98358911/58182d29N61d358d1.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img12.360buyimg.com/n4/s130x130_g9/M03/05/04/rBEHalBFU0UIAAAAAAHGDjTuIY0AABAMwKcZPEAAcYm020.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img13.360buyimg.com/n4/s130x130_jfs/t5575/157/1788433153/332394/c0b0b575/592a11e1Ne4910dd8.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img11.360buyimg.com/n4/s130x130_jfs/t3811/81/683415179/202613/98358911/58182d29N61d358d1.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img12.360buyimg.com/n4/s130x130_g9/M03/05/04/rBEHalBFU0UIAAAAAAHGDjTuIY0AABAMwKcZPEAAcYm020.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img13.360buyimg.com/n4/s130x130_jfs/t5575/157/1788433153/332394/c0b0b575/592a11e1Ne4910dd8.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img11.360buyimg.com/n4/s130x130_jfs/t3811/81/683415179/202613/98358911/58182d29N61d358d1.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                            <div>
+                                <div><img src="http://img10.360buyimg.com/n4/s130x130_jfs/t2587/49/3981587096/43311/dfbc231c/57a2f6f9N88b2d873.jpg"
+                                        alt=""></div>
+                                <p>海信（Hisense）XQB70-H3568 7公斤全自动波轮洗衣机立体</p>
+                                <p><span>¥788.00</span><span>¥1699.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="ms_buttons">-->
+                    <span id="ms_prev" class="glyphicon glyphicon-menu-left"></span>
+                    <span id="ms_next" class="glyphicon glyphicon-menu-right"></span>
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="pinpaimiaosha">
+                <div id="paihan_Box">
+                    <div class="paihan_imgBox">
+                        <img src="http://img12.360buyimg.com/mobilecms/s180x225_jfs/t9259/324/1935917082/91294/45dccb1a/59c1d694N34d9999b.png" alt=""
+                            style="display:block">
+                        <img src="http://img12.360buyimg.com/mobilecms/s180x225_jfs/t8179/232/1878869798/56947/7658fdd1/59c0b807Naf6fb7ed.jpg" alt="">
+                    </div>
+                    <div class="paihan_indicators">
+                        <span class="current"></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faxiandemo">
+        <div class="faxian">
+            <div class="faxian_logo">
+                <img src="./img/green.png" alt="" style="position:absolute;top:0;left:0;">
+                <div>
+                    <span class="big">发现好货</span>
+                    <span>发现品质生活<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+            </div>
+            <div class="faxian_content">
+            </div>
+        </div>
+        <div class="huimai">
+            <div class="huimai_logo">
+                <img src="./img/a2.png" alt="" style="position:absolute;top:0;left:0;">
+                <div>
+                    <span class="big">会买专辑</span>
+                    <span>甄选优质好物<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+            </div>
+            <div class="huimai_content">
+                <div id="huimai_lunbo">
+                    <div class="imgBox_hm">
+
+                    </div>
+                    <div class="indicators_hm">
+                        <span class="current"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span id="prev_hm" class="glyphicon glyphicon-menu-left"></span>
+                    <span id="next_hm" class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="paihan">
+            <div class="paihan_logo">
+                <img src="./img/a1.png" alt="" style="position:absolute;top:0;left:0;">
+                <div>
+                    <span class="big">排行榜</span>
+                    <span>专属你的购物指南<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+            </div>
+            <div class="paihan_content">
+                <div class="ph_pa">
+                    <div class="ph_bt">
+                        <p><a href="">手机通讯</a></p>
+                        <p><a href="">手机配件</a></p>
+                        <p><a href="">电脑整机</a></p>
+                        <p><a href="">大家电</a></p>
+                        <p><a href="">男装</a></p>
+                    </div>
+                    <p class="red_gundong"></p>
+                </div>
+                <div class="ph_neirong">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lingquandemo">
+        <div class="lingquan">
+            <div class="lingquan_logo">
+                 <img src="./img/a3.png" alt="" style="position:absolute;top:0;left:0;">
+                <div class="lingquan_logo_bj">
+                    <span class="bt">领券中心</span>
+                    <span class="wb">前往领券中心<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+            </div>
+            <div class="lingquan_content">
+                <div>
+                    <div class="gengduo">
+                        <h5>¥<span style="font-size:40px;color: #EA2C13;">16</span></h5>
+                        <p>仅可购买京东自营图书音像商品</p>
+                        <p>消费满200元可用</p>
+                        <h6>更多好券</h6>
+                        <img src="./img/huise.png" alt="" class="huise">
+                    </div>
+                    <img src="http://img14.360buyimg.com/n7/s140x140_jfs/t2119/335/260162897/562457/e758f968/55fbb8a6N64863ad3.jpg!q90.webp"
+                        alt="" class="bh_tp">
+                </div>
+                <div>
+                    <div class="gengduo">
+                        <h5>¥<span style="font-size:40px;color: #EA2C13;">1000</span></h5>
+                        <p>仅可购买部分钟表商品</p>
+                        <p>消费满8000元可用</p>
+                        <h6>更多服饰箱包券</h6>
+                        <img src="./img/huise.png" alt="" class="huise">
+                    </div>
+                    <img src="http://m.360buyimg.com/babel/s140x140_jfs/t7219/127/3177758410/12521/1fba2cda/59bb3a7fN6e98f121.jpg!q90" alt=""
+                        class="bh_tp">
+                </div>
+                <div>
+                    <div class="gengduo">
+                        <h5>¥<span style="font-size:40px;color: #EA2C13;">1500</span></h5>
+                        <p>仅可购买自营冰洗冷品部分商品</p>
+                        <p>消费满10000元可用</p>
+                        <h6>更多数码家电券</h6>
+                        <img src="./img/huise.png" alt="" class="huise">
+                    </div>
+                    <img src="http://m.360buyimg.com/babel/s140x140_jfs/t8803/37/1744413889/8610/4da41d08/59bf1d04Nd8624858.jpg!q90" alt="" class="bh_tp">
+                </div>
+                <div>
+                    <div class="gengduo">
+                        <h5>¥<span style="font-size:40px;color: #EA2C13;">1000</span></h5>
+                        <p>仅可购买家具建材部分商品</p>
+                        <p>消费满4999元可用</p>
+                        <h6>更多家居家纺券</h6>
+                        <img src="./img/huise.png" alt="" class="huise">
+                    </div>
+                    <img src="http://m.360buyimg.com/babel/s140x140_jfs/t8254/302/1452353271/12954/25b59ae5/59b9de1aN75503f44.jpg!q90" alt=""
+                        class="bh_tp">
+                </div>
+            </div>
+        </div>
+        <div class="minme">
+            <div class="minme_logo">
+                <img src="./img/a4.png" alt="" style="position:absolute;top:0;left:0;">
+                <div class="minme_logo_bj">
+                    <span class="bt">觅me</span>
+                    <span class="wb">探索生活<span class="glyphicon glyphicon-circle-arrow-right"></span></span>
+                </div>
+            </div>
+            <div class="minme_content">
+                <div id="slideBox_fm">
+                    <div class="imgBox_fm">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </div>
+                    <div class="indicators_fm">
+                        <span class="current"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span id="prev_fm">&lt;</span>
+                    <span id="next_fm">&gt;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rightfixed">
+        <div class="rightfixed_top">
+            <div><i class="xuebi_right xuebi_right_1"></i><em><a href="">京东会员</a></em></div>
+            <div><i class="xuebi_right xuebi_right_2"></i><em><a href="">购物车</a></em></div>
+            <div><i class="xuebi_right xuebi_right_3"></i><em><a href="">我的关注</a></em></div>
+            <div><i class="xuebi_right xuebi_right_4"></i><em><a href="">我的足迹</a></em></div>
+            <div><i class="xuebi_right xuebi_right_5"></i><em><a href="">我的消息</a></em></div>
+            <div><i class="xuebi_right xuebi_right_6"></i><em><a href="">咨询JIMI</a></em></div>
+        </div>
+        <div class="rightfixed_bottom">
+            <div><i class="xuebi_right xuebi_right_7"></i><em><a href="">顶部</a></em></div>
+            <div><i class="xuebi_right xuebi_right_8"></i><em><a href="">反馈</a></em></div>
+        </div>
+    </div>
+
+    <div class="middel_guangao" id="floor_xpz">
+        <div class="middel_content">
+            <img src="//m.360buyimg.com/babel/jfs/t8818/24/1609204758/37107/3a11121f/59c3514eN2bc4ec13.jpg!q90" alt="">
+            <img src="//img10.360buyimg.com/da/jfs/t3895/356/520324696/14059/e9aa554f/58522b9dNf06d6f3d.jpg!q90" alt="">
+            <img src="//img1.360buyimg.com/da/jfs/t8107/277/1997066022/13924/7694e307/59c24ef1N6cd0d69b.jpg!q90" alt="">
+        </div>
+    </div>
+
+    <div class="xiangpingzhi">
+        <div class="xpz_content">
+            <div class="big_bt">
+                <p>............................................</p>
+                &#x3000;&#x3000;
+                <h3>享品质</h3>&#x3000;&#x3000;
+                <p>............................................</p>
+            </div>
+            <div class="xpz_content_in">
+                <div class="xpz_content_left"></div>
+                <div class="xpz_content_right">
+                    <div id="slideBox_zb">
+                        <div class="imgBox_zb">
+                            <div>
+                                <p><span>京东直播</span><span>更多</span></p><img src="./img/第五轮播1.jpg" alt="">
+                                <div class="kaishi_tp"></div>
+                            </div>
+                            <div>
+                                <p><span>京东直播</span><span>更多</span></p><img src="./img/第五轮播2.jpg" alt="">
+                                <div class="kaishi_tp"></div>
+                            </div>
+                            <div>
+                                <p><span>京东直播</span><span>更多</span></p><img src="./img/第五轮播3.jpg" alt="">
+                                <div class="kaishi_tp"></div>
+                            </div>
+                            <div>
+                                <p><span>京东直播</span><span>更多</span></p><img src="./img/第五轮播4.jpg" alt="">
+                                <div class="kaishi_tp"></div>
+                            </div>
+                            <div>
+                                <p><span>京东直播</span><span>更多</span></p><img src="./img/第五轮播5.jpg" alt="">
+                                <div class="kaishi_tp"></div>
+                            </div>
+                        </div>
+                        <div class="indicators_zb">
+                            <span class="current"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span id="prev_zb">&lt;</span>
+                        <span id="next_zb">&gt;</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="xpz_guangao" id="floor_fs">
+        <div class="middel_content">
+            <img src="//m.360buyimg.com/babel/jfs/t8206/180/1525382740/7379/fa85ed6f/59bb5324N54301804.jpg!q90" alt="">
+            <img src="//img1.360buyimg.com/da/jfs/t9253/44/1401568229/28293/41c140ba/59b8fcd9N0d16d8bd.jpg!q90" alt="">
+            <img src="//img14.360buyimg.com/da/jfs/t3610/292/2402519223/21798/ec887099/585229bdNc20796ec.jpg!q90" alt="">
+        </div>
+    </div>
+
+    <div class="aishenghuo">
+        <div class="aishenghuo_content">
+            <div class="big_bt">
+                <p>............................................</p>
+                &#x3000;&#x3000;
+                <h3>爱生活</h3>&#x3000;&#x3000;
+                <p>............................................</p>
+            </div>
+            <div class="show_neirong">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="goutese">
+        <div class="goutese_content">
+            <div class="big_bt">
+                <p>............................................</p>
+                &#x3000;&#x3000;
+                <h3>购特色</h3>&#x3000;&#x3000;
+                <p>............................................</p>
+            </div>
+            <div class="gts_content">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="middel_guangao" id="floor_mgg">
+        <div class="middel_content">
+            <img src="//m.360buyimg.com/babel/jfs/t8818/24/1609204758/37107/3a11121f/59c3514eN2bc4ec13.jpg!q90" alt="">
+            <img src="//img10.360buyimg.com/da/jfs/t3895/356/520324696/14059/e9aa554f/58522b9dNf06d6f3d.jpg!q90" alt="">
+            <img src="//img1.360buyimg.com/da/jfs/t8107/277/1997066022/13924/7694e307/59c24ef1N6cd0d69b.jpg!q90" alt="">
+        </div>
+    </div>
+
+
+    <div class="meiguanggou">
+        <div class="meiguanggou_content">
+            <div class="big_bt">
+                <p>............................................</p>
+                &#x3000;&#x3000;
+                <h3>还没逛够</h3>&#x3000;&#x3000;
+                <p>............................................</p>
+            </div>
+            <div class="mgg_content">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="dibu">
+        <div class="dibu-content">
+            <div class="dibu_top">
+                <ul>
+                    <li><span style="background-position: 0px 0px;"></span>品类齐全，轻松购物</li>
+                    <li><span style="background-position: 0px -44px;"></span>多仓直发，极速配送</li>
+                    <li><span style="background-position: 0px -86px;"></span>正品行货，精致服务</li>
+                    <li><span style="background-position: 0px -128px;"></span>天天低价，畅选无忧</li>
+                </ul>
+            </div>
+
+            <div class="dibu_center">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员介绍</dd>
+                    <dd>生活旅行</dd>
+                    <dd>常见问题</dd>
+                    <dd>大家电</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>上门自提</dd>
+                    <dd>211限时达</dd>
+                    <dd>配送服务查询</dd>
+                    <dd>配送费收取标准</dd>
+                    <dd>海外配送</dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>在线支付</dd>
+                    <dd>分期付款</dd>
+                    <dd>邮局汇款</dd>
+                    <dd>公司转账</dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>售后政策</dd>
+                    <dd>价格保护</dd>
+                    <dd>退款说明</dd>
+                    <dd>返修/退换货</dd>
+                    <dd>取消订单</dd>
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd>夺宝岛</dd>
+                    <dd>DIY装机</dd>
+                    <dd>延保服务</dd>
+                    <dd>京东E卡</dd>
+                    <dd>京东通信</dd>
+                    <dd>京东JD+</dd>
+                </dl>
+
+                <dl style="background-image: url(//misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/ico_footer.png);">
+                    <dt>京东自营覆盖区县</dt>
+                    <dd>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</dd>
+                    <dd><a href="">查看详情></a></dd>
+                </dl>
+            </div>
+
+            <div class="dibu_bottom">
+                <ul>
+                    <li>关于我们</li>
+                    <li>联系我们</li>
+                    <li>联系客服</li>
+                    <li>合作招商</li>
+                    <li>营销中心</li>
+                    <li>手机京东</li>
+                    <li>友情链接</li>
+                    <li>销售联盟</li>
+                    <li>京东社区</li>
+                    <li>风险监测</li>
+                    <li>隐私政策</li>
+                    <li>京东公益</li>
+                    <li>English Site|</li>
+                    <li>Contact Us</li>
+                </ul>
+
+                <ul>
+                    <li>京公网安备 11000002000088号|号</li>
+                    <li>京ICP证070359号|</li>
+                    <li>互联网药品信息服务资格证编号(京)-经营性-2014-0008|</li>
+                    <li>新出发京零 字第大120007</li>
+                </ul>
+
+                <ul>
+                    <li>互联网出版许可证编号新出网证(京)字150号|</li>
+                    <li>出版物经营许可证|</li>
+                    <li>网络文化经营许可证京网文[2014]2148-348号|</li>
+                    <li>违法和不良信息举报电话：4006561155</li>
+                </ul>
+
+                <ul>
+                    <li>Copyright © 2004 - 2017 京东JD.com 版权所有|</li>
+                    <li>消费者维权热线：4006067733经营证照</li>
+                </ul>
+
+                <ul>
+                    <li>京东旗下网站：京东钱包|</li>
+                    <li>京东云</li>
+                </ul>
+
+                <ul>
+                    <li style="background-position: 0 -150px;"></li>
+                    <li style="background-position: -102px -150px;"></li>
+                    <li style="background-position: 0 -184px;"></li>
+                    <li style="background-position: -102px -184px;"></li>
+                    <li style="background-position: 0 -218px;"></li>
+                    <li style="background-position: -102px -218px;"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // 控制广告的叉号
+    $('#close').click(function () {
+        $('.adver').slideUp();
+    })
+
+</script>
+<script src="./scripts/nav.js"></script>
+<script src="./scripts/lunbodemo.js"></script>
+<script src="./scripts/miaoshatime.js"></script>
+<script src="./scripts/miaoshaluobo.js"></script>
+<script src="./scripts/pinpai_lunbo_lunbo.js"></script>
+<script src="./scripts/fixed.js"></script>
+<script src="./scripts/rightfixed.js"></script>
+<script src="./scripts/faxiandemo.js"></script>
+<script src="./scripts/xiangpingzhi.js"></script>
+<script src="./scripts/aishenghuo.js"></script>
+<script src="./scripts/gengduo.js"></script>
+<script src="./scripts/lingquan.js"></script>
+<script src="./scripts/goutese.js"></script>
+
+<!--左边一级级菜单-->
+<script id="leftmenu_demo" type="text/html">
+    <li>
+        {{each cateList ele}}
+        <span><a href="">{{ele}}</a></span>&nbsp;<span>/</span> {{/each}}
+    </li>
+</script>
+
+
+
+<script>
+    // 延迟预加载    
+    // $(function () {
+    //     function delayImageLoad() {
+    //         setTimeout(function () {
+    //             $('.faxiandemo img,.lingquandemo img,.rightfixed img,.middel_guangao img,.xiangpingzhi img,.aishenghuo img,.middel_guangao img,.meiguanggou img').each(function (index) {
+    //                 if ($(window).height() + $(document).scrollTop() >= $(this).offset().top) {
+    //                     // 判断如果图片距离文档顶部的距离，小于窗口高度加上文档滑动上去的距离，则开始加载图片
+    //                     // 设置图片的src属性，加载图片
+    //                     $(this).animate({
+    //                         opacity: 1
+    //                     }, 2000);
+    //                 }
+    //             })
+    //         }, 500);
+    //     }
+
+    //     delayImageLoad();
+    //     // 当窗口大小改变或者文档滑动时，调用延迟加载方法进行判断
+    //     $(window).on('resize', delayImageLoad);
+    //     $(document).on('scroll', delayImageLoad);
+    // })
+
+
+
+</script>
+
+
+
+</html>

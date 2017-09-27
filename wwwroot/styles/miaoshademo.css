@@ -1,0 +1,208 @@
+.miaoshademo {
+            width: 1200px;
+            height: 300px;
+            /*background: pink;*/
+            margin: 10px auto;
+        }
+
+        .miaosha {
+            width: 100%;
+            height: 55px;
+            position: relative;
+        }
+
+        .miaobeijing {
+            width: 100%;
+            height: 55px;
+            background-image: url('../img/redbackground.png');
+            background-size: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .leftjiao_logo {
+            width: 50px;
+            height: 50px;
+            background-image: url('../img/xuebitu3.png');
+            background-size: 400% 300%;
+            background-position: -304% -71%;
+            position: absolute;
+            top: 0;
+        }
+
+        .shizhong_logo {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 100;
+            width: 40px;
+            height: 50px;
+            background-image: url('../img/xuebitu3.png');
+            background-size: 400% 300%;
+            background-position: 0% 18%;
+            /*background-color: yellow;*/
+        }
+
+        .miaoshacontent {
+            width: 92%;
+            height: 80%;
+            position: absolute;
+            top: 5px;
+            left: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .jingdong_text {
+            font-size: 25px;
+        }
+
+   
+        .hour,
+        .min,
+        .second {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #440106;
+            color: #F90013;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .dian {
+            color: #440106;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .miaosha_lunbo_demo {
+            width: 100%;
+            height: 235px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .miaosha_lunbo {
+            width: 81%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .pinpaimiaosha {
+            background-color: green;
+            width: 18%;
+            height: 100%;
+        }
+        /*秒杀轮播的css*/
+
+        #miaosha_Box {
+            width: 100%;
+            height: 100%;
+            /*border: 1px solid black;*/
+            position: relative;
+            margin: 0px auto;
+        }
+
+        .ms_imgBox {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*background-color: yellow;*/
+            display: flex;
+            /*flex-direction: column;*/
+        }
+
+        .img>div {
+            flex: auto;
+            height: 100%;
+            border: 1px solid gainsboro;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .img img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+        }
+
+        .img>div p:nth-of-type(2) {
+            align-self: flex-start;
+        }
+
+        .img>div p:nth-of-type(2) span:nth-of-type(1) {
+            color: #F10214;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .img>div div {
+            width: 120px;
+            height: 120px;
+            position: relative;
+        }
+
+        .ms_indicators {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .ms_buttons {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        #ms_prev,
+        #ms_next {
+            display: inline-block;
+            width: 25px;
+            height: 50px;
+            background-color: black;
+            opacity: 0;
+            color: white;
+            text-align: center;
+            line-height: 23px;
+            position: absolute;
+            line-height: 50px;
+            top: 80px;
+        }
+
+        #ms_next {
+            right: 0;
+        }
+
+        .ms_indicators span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: orange;
+            border: 1px solid green;
+            text-align: center;
+            line-height: 23px;
+        }
+
+        .ms_indicators span.current {
+            border-color: red;
+        }

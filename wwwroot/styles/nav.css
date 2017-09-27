@@ -1,0 +1,235 @@
+* {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #F6F6F6;
+            min-width: 1200px;
+            min-height: 100%;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav {
+            height: 30px;
+            background-color: #E3E4E5;
+        }
+
+        .navchild {
+            width: 1200px;
+            height: 100%;
+            /*background-color: pink;*/
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+         .navchild>ul:nth-of-type(1){
+             margin-left: 200px;
+         }
+        .navchild_right {
+            color: gray;
+            width: 55%;
+            height: 100%;
+            /*background-color: red;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /*font-size: 1rem;*/
+        }
+
+        .navchild_right>span {
+            height: 100%;
+            line-height: 30px;
+            /*padding: 10px;*/
+        }
+
+        .navchild_right>span:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .showmenu:hover {
+            background: white;
+        }
+
+        .red_text {
+            color: red;
+        }
+
+        #adress{
+           width: 70px;
+           height: 100%;
+           display: inline-block; 
+           line-height: 30px;
+           /*text-align: center;*/
+        }
+         #adress:hover{
+             background-color: white;
+         }
+         .adress{
+             display: none;
+         }
+        .adress_show{
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            left: 16.7%;
+            color: gray;
+            /*display: none;*/
+            z-index: 100; 
+            box-shadow: 0 1px 1px black;
+         }
+        .adress>span{
+            text-align: center;
+            width:44px;
+            height: 20px;
+            line-height: 20px;
+            margin: 3px 8px 3px 8px;
+            cursor:pointer;
+        } 
+        .adress span:nth-of-type(1){
+            color: white;
+            background-color: red;
+        }
+        .myJD {
+            width: 240px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            right: 16.9%;
+            color: gray;
+            display: none;
+            z-index: 100;
+            box-shadow: 0 1px 1px black;
+        }
+
+        .myJD ul {
+            padding: 20px;
+            height: 50%;
+            display: inline-block;
+            flex: 0 0 50%;
+        }
+
+        .myserver {
+            width: 200px;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+            right: 12.7%;
+            display: none;
+            color: gray;
+            z-index: 200;
+            box-shadow: 0 1px 1px black;
+        }
+
+        .myserver div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .myserver p {
+            align-self: flex-start;
+            font-weight: bold;
+            color: black;
+        }
+
+        .myserver ul {
+            padding: 10px;
+            height: 50%;
+            align-self: flex-end;
+            flex: 0 0 50%;
+        }
+
+        .daohan_parname{
+            width: 100%;
+            height: 180px;
+            background: white;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            display: none;
+            z-index: 101;
+        }
+        .daohan {
+            width: 100%;
+            height: 180px;
+            background: white;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 101;
+            box-shadow: 0 1px 1px black;
+        }
+
+        .daohan>div {
+            flex: 0 0 23%;
+            height: 80%;
+            border-right: 1px solid gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px;
+            color: gray;
+            font-size: 13px;
+        }
+        .daohan>div:nth-of-type(1){
+            flex: 0 0 31%;
+        }
+
+        .daohan>div:nth-of-type(4) {
+            border-right: none;
+        }
+         .daohan ul{
+             width: 100%;
+             height: 100%;
+         } 
+         .daohan li{
+            display: inline-block;
+            width: 32%;
+            line-height: 25px;
+            color: gray;
+        }
+        .daohan li:hover{
+              color: red 
+        }
+        .daohan>div:nth-of-type(1) li{
+            display: inline-block;
+            width: 24%;
+        }
+        
+        

@@ -1,0 +1,283 @@
+.xiangpingzhi{
+           width: 100%;
+           height: 585px;
+           background-color: #F6F6F6;
+       }
+       .xpz_content{
+           width: 1200px;
+           height: 100%;
+           /*background-color: blue;*/
+           margin: 0 auto;
+       }
+       .big_bt{
+           width: 100%;
+           height: 90px;
+           background-color: #F6F6F6;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           color:#8E8E8E;
+           letter-spacing:2px;
+       }
+       .big_bt p{
+           font-size: 30px;
+           letter-spacing:3px;
+           color:#C4C4C4;
+       }
+       .xpz_content_in{
+           width: 100%;
+           height: 550px;
+           /*background-color: red;*/
+           display: flex;
+           /*flex-direction: column;*/
+           justify-content: space-between;
+           position: relative;
+       }
+      
+       .xpz_content_left{
+           width: 67%;
+           height: 100%;
+           /*background-color: palevioletred;*/
+       }
+       .xpz_tongyi{
+           width:390px;
+           height: 170px; 
+           display: inline-block;
+           margin: 0 10px 10px 0;
+       }
+       .xpzcss{
+           width:390px;
+           height: 170px;
+           /*background-color: red; */
+           position: relative;
+           display: flex;
+           overflow: hidden;
+       }
+       .xpz_left{
+           position: absolute;
+           top:0;
+       }
+       .xpzcss img{
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           right: -20px;
+       }
+       .xpz_left{
+           height: 100%;
+           width: 140px;
+           background-color: yellow;
+           position: relative;
+           z-index: 10;
+       } 
+       .xpz_tongyi h4{
+           width: 100px;
+           height: 45px;
+           margin: 40px auto;
+           border-top: 2px solid white;
+           border-bottom: 2px solid white;
+           color: white;
+           font-size: 22px;
+           text-align: center;
+           line-height: 45px;
+           margin-bottom: 5px;
+       }
+       .xpz_tongyi p{
+           width: 100px;
+           height: 45px;
+           margin: 0 auto;
+           font-size: 15px;
+           color: white;
+       }
+       .x_left_0{
+           background-color: #72BB90;
+       }
+       .x_left_1{
+           background-color: #DDD279;
+       }
+       .x_left_2{
+           background-color: #5D5566;
+       }
+       .x_left_3{
+           background-color: #498C94;
+       }
+       .x_left_4{
+           background-color: #D78E28;
+       }
+       .x_left_5{
+           background-color: #866350;
+       }
+       /*.x_left_6{
+           background-color: #72BB90;
+       }
+       .x_left_7{
+           background-color: #72BB90;
+       }*/
+       .ty_6,.ty_7{
+           width: 190px;
+           height: 170x;
+           position: relative;
+       }
+       .ty_6 .xpz_left,.ty_7 .xpz_left{
+           width: 100%;
+           height: 84px;
+           position: relative;
+           top:86px;
+       } 
+       .ty_6 .xpzcss,.ty_7 .xpzcss{
+           width:190px;
+           height: 170x;
+           position: relative;
+       }
+       .xpz_tongyi.ty_6{
+           position: absolute;
+           top: 360px;
+           right: 194px;
+           background-color: #ECDADC;
+       }
+       .xpz_tongyi.ty_7{
+           position: absolute;
+           top: 360px;
+           right: -9px;
+           background-color: #C8BED2;
+       }
+       .ty_6 img,.ty_7 img{
+           width: 190px;
+           position: absolute;
+           /*left: 0;*/
+       }
+       .x_left_6 h4,.x_left_7 h4{
+           margin: 10px auto;
+           margin-bottom: 5px;
+           font-size: 18px;
+           height: 40px;
+       }
+       .x_left_6 p,.x_left_6 p{
+           height: 20px;
+           margin: 5px auto;
+           text-align: center;
+       } 
+       .xpz_left.x_left_6{
+           background-color:#B04942; 
+       }
+       .xpz_left.x_left_7{
+           background-color:#61336F; 
+       }
+
+
+       .xpz_content_right{
+           width:33%;
+           height: 63.5%;
+           /*background-color: palevioletred;*/
+       }
+
+       /*----------直播的css*/
+         #slideBox_zb {
+           width: 100%;
+            height: 100%;
+            /*border: 1px solid red;*/
+            position: relative;
+            margin: 0px auto;
+        }
+
+        .imgBox_zb {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .imgBox_zb>div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            background-color: yellow;
+        }
+        .imgBox_zb>div p{
+            width: 100%;
+            height: 38px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            padding: 0 20px 0 20px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            line-height: 38px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .imgBox_zb>div p span:nth-of-type(2){
+            font-size: 15px;
+        }
+        .imgBox_zb>div img{
+            width: 100%;
+            height: 100%;
+        }
+        .imgBox_zb>div:nth-of-type(1) {
+           display: block;
+        }
+
+        .kaishi_tp{
+            width: 68px;
+            height: 68px;
+            position: absolute;
+            top: calc((100% - 65px)/2);
+            left: calc((100% - 65px)/2);
+            background-image: url('../img/sprite_entrylive@1x.png');
+            background-size: 237px 170px;
+            background-position: 2px -104px;
+        }
+
+        .indicators_zb {
+            position: absolute;
+            left: 160px;
+            bottom: 20px;
+
+        }
+
+        .buttons_zb {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .indicators_zb>span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            text-align: center;
+            line-height: 23px;
+            border-radius: 50%;
+            margin: 2px;   
+        }
+        #prev_zb{
+            position:absolute;
+            top: calc((100% - 50px)/2);
+            left: 0;
+            width: 25px;
+            height: 50px;
+            background-color: #4B4D51;
+            color: white;
+            line-height: 50px;
+            text-align: center; 
+        }
+        #next_zb{
+            position:absolute;
+            top: calc((100% - 50px)/2);
+            right: 0;
+            width: 25px;
+            height: 50px;
+            background-color: #4B4D51;
+            color: white;
+            line-height: 50px;
+            text-align: center; 
+        }
+        .indicators_zb>span.current {
+            background-color: red;
+        }

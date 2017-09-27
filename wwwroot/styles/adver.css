@@ -1,0 +1,28 @@
+ .adver {
+            height: 80px;
+            background-color: #EB6595;
+        }
+
+        .adver_content {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            top: 0;
+            right: 0px;
+            z-index: 100px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        .close:hover {
+            color: white;
+        }

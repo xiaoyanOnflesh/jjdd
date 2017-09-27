@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="xiaoyan">
+    <title></title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./styles/denglu.css">
+    <script src="./js/jquery.cookie.js"></script>
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <div class="dengludemo">
+        <div class="denglu_top">
+            <div class="denglu_top_logo">
+                <div class="denglu_top_logo_left"><img src="./img/logo-201305-b.png" alt=""><img src="./img/l-icon.png" alt="" style="margin-top:20px;margin-left:10px;"></div>
+                <div class="denglu_top_logo_right"><span class="red_logo"></span><span style="color:gray">登陆页面,调查问卷</span></div>
+            </div>
+            <div class="denglu_top_bottom">
+                <span class="wangluo">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版《京东隐私政策》已上线，将更有利于保护您的个人隐私。</span>
+            </div>
+        </div>
+        <div class="denglu_middel">
+            <div class="denglu_beijin">
+                <img src="./img/王凯.jpg" alt="" class="wkai">
+                <div class="denglukuang">
+                    <div class="saoma"><span>扫码登录</span><span>账户登录</span></div>
+                    <div class="erweima">
+                        <img src="./img/二维码.jpg" alt="" class="erweima_1">
+                        <img src="./img/二维码手机.png" alt="" class="erweima_2">
+                    </div>
+                    <div class="openJD">
+                        <span>打开<span style="color:red">手机京东</span></span><span>扫描二维码</span>
+                    </div>
+                    <div class="mianshuru">
+                        <span><span class="xuebi_mianshu shuru"></span><span>免输入</span></span>
+                        <span><span class="xuebi_mianshu gengkuai"></span><span>更快</span></span>
+                        <span><span class="xuebi_mianshu anquan"></span><span>更安全</span></span>
+                    </div>
+                    <div class="lijizhuce">
+                        <div>
+                            <span class="QQ_logo"></span><span>QQ</span>
+                            <span class="weixn_logo"></span><span>微信</span>
+                        </div>
+                        <div>
+                            <span class="lijie_logo"></span><span><a href="./zhuce.html">立即注册</a></span>
+                        </div>
+                    </div>
+                    <div class="denglu_boxb">
+                        <form action="/api/v1/user/denglu" method="post">
+                            <div><img src="./img/yonghu.png" alt=""><input type="text" class="yonghu" placeholder="邮箱/用户名/已验证手机" name="yonghuming"></div>
+                            <div><img src="./img/mima.png" alt=""><input type="text" class="mima" placeholder="密码" name="yonghumima"></div>
+                            <p>忘记密码</p>
+                            <div><button type="submit" class="denglu">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="denglu_footer">
+            <span>
+                <span>关于我们</span><span>|</span>
+                <span>联系我们</span><span>|</span>
+                <span>人才招聘</span><span>|</span>
+                <span>商家入驻</span><span>|</span>
+                <span>广告服务</span><span>|</span>
+                <span>手机京东</span><span>|</span>
+                <span>友情链接</span><span>|</span>
+                <span>销售联盟</span><span>|</span>
+                <span>京东社区</span><span>|</span>
+                <span>京东公益</span><span>|</span>
+                <span>English Site</span><span>|</span>
+            </span>
+            <p>Copyright © 2004-2017  京东JD.com 版权所有</p>
+        </div>
+    </div>
+
+</body>
+   <script>
+      $('.erweima').hover(function () {
+          $('.erweima_1').stop().animate({
+              'left':'30px',
+            });
+            $('.erweima_2').stop().fadeIn();
+      },function () {
+           $('.erweima_1').stop().animate({
+              'left':'110px',
+            });
+             $('.erweima_2').stop().fadeOut();
+      })
+   
+   $('.saoma span').eq(0).click(function () {
+       $('.saoma span').css({
+             color: 'black',
+            'font-weight':100
+       })
+       $(this).css({
+             color: 'red',
+            'font-weight': 'bold'
+       })
+       $('.denglu_boxb').hide();
+   }) 
+   $('.saoma span').eq(1).click(function () {
+       $('.saoma span').css({
+             color: 'black',
+            'font-weight': 100
+       })
+       $(this).css({
+             color: 'red',
+            'font-weight': 'bold'
+       })
+       $('.denglu_boxb').show();
+   })   
+
+
+   $('form').submit(function (e) {
+            e.preventDefault();
+            $.post(this.action, $(this).serialize(), (data) => {
+                if (data.code == 'success') {
+                    console.log(data);
+                    alert(data.message)
+                    location.href = '/index.html';
+                }else {
+                    // 登录失败(密码错误)
+                    alert(data.message)
+                }
+
+            })
+        })
+   </script>
+    
+</html>

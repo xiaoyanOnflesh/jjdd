@@ -1,0 +1,37 @@
+#myScrollspy{
+            width: 35px;
+            height: auto;
+            background-color: black;
+            position: fixed;
+            left: 14%;
+            top:350px;
+            z-index: 20;
+            display: none;
+        }
+        .left_showc{
+            width: 100%;
+            height: 100%;
+        }
+        .left_showc li{
+            padding: 5px 0 5px 0px;
+            width: 100%;
+            border-bottom: 1px solid white;
+            background-color: gray;
+            text-align: center;
+        }
+      
+
+        .left_showc a{
+           color: white;
+        }
+
+        .left_showc li:nth-of-type(1){
+             background-color: red;
+        }
+
+        .left_showc li:nth-last-of-type(1){
+            background-color: #5E4A4A;
+        }
+        .left_showc li a{
+            color: white;
+        }

@@ -1,0 +1,221 @@
+.lingquandemo {
+            width: 1200px;
+            height: 270px;
+            /*background-color: palevioletred;*/
+            margin: 25px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lingquan {
+            width: 66.3%;
+            height: 100%;
+            /*background-color: palegoldenrod;*/
+        }
+        .lingquan_logo{
+            width: 100%;
+            height: 55px;
+            background-color: #EA2C13;
+            /*border-top-left-radius:35px;*/
+            position: relative;
+        }
+        .lingquan_logo_bj{
+            width: 95%;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 26px;
+        }
+        .lingquan_content{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+        .lingquan_content>div{
+            width: 25%;
+            height: 95%;
+            border-right: 1px solid gainsboro;
+            position: relative;
+        }
+        
+        .gengduo{
+            width: 50%;
+            height: 80%;
+            background-color: white;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            border-top: 3px solid #EA2C13;
+            z-index: 10;
+        }
+        h5,h6{
+            margin: 0;
+            color: #EA2C13;
+        }
+        h6{
+            height: 26px;
+            color: white;
+            text-align: center;
+            background-color: #EA2C13;
+            line-height: 26px;
+        }
+        .gengduo p{
+            font-size: 12px;
+            padding: 0 5px 10px 5px;
+            color: #EA2C13;
+        }
+        .gengduo p:nth-of-type(2){
+            color: gray;
+            padding: 10px;
+            z-index: 10;
+            position: relative;
+        }
+        .huise{
+            position: absolute;
+            bottom: 20px;
+            z-index: 0;
+        }
+        .bh_tp{
+            position: absolute;
+            right: 15px;
+            top: 40px;
+            z-index: 0;
+        }
+        /*-----觅me的css*/
+        .minme {
+            width: 32.5%;
+            height: 100%;
+            /*background-color: palegoldenrod;*/
+        }
+        .minme_logo{
+            width: 100%;
+            height: 55px;
+            background-color: #545F9A;
+            /*border-top-left-radius:35px;*/
+            position: relative;
+        }
+        .minme_logo_bj{
+            width: 90%;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25px;
+        }
+
+        .minme_content {
+            width: 100%;
+            height: 210px;
+            background-color: white;
+        }
+        
+         #slideBox_fm {
+            width: 100%;
+            height: 100%;
+            /*border: 1px solid red;*/
+            position: relative;
+            margin: 0px auto;
+        }
+
+        .imgBox_fm {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .imgBox_fm>div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            /*background-color: yellow;*/
+        }
+
+        .imgBox_fm>div:nth-of-type(1) {
+           display: block;
+        }
+
+        .imgBox_fm>div>div{
+            width: 140px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .imgBox_fm>div>img{
+            /*display: inline-block;*/
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .imgBox_fm>div>div p:nth-of-type(2){
+             font-size: 12px;
+             color: gray;
+        }
+        .imgBox_fm>div>div p:nth-of-type(2) span{
+            color: blue;
+        }
+
+        .imgBox_fm>div>div p:nth-of-type(3){
+            margin-top: 20px;
+            color: gray;
+        }
+
+        .indicators_fm {
+            position: absolute;
+            left: 155px;
+            bottom: 10px;
+        }
+
+        .buttons_fm {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .indicators_fm>span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #c7c7c7;
+            text-align: center;
+            line-height: 23px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+        #prev_fm,#next_fm{
+            display: inline-block;
+            width: 20px;
+            height: 40px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            background-color: #c7c7c7;
+        }
+        #prev_fm{
+            position: absolute;
+            top: 80px;
+            left: 0;
+        }
+         #next_fm{
+            position: absolute;
+            top: 80px;
+            right: 0;
+        }
+
+        .indicators_fm>span.current {
+            background-color: red;
+        }
+        .bt{
+            font-size: 25px;
+            color: white;
+        }
+        .wb{
+            color: white;
+        }

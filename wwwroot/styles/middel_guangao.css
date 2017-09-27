@@ -1,0 +1,19 @@
+        .middel_guangao{
+            width: 100%;
+            height: 100px;
+            background-color: #e0e0e0;
+
+        }
+        .middel_content{
+            width: 1200px;
+            height: 100%;
+            /*background-color: red;*/
+            margin: 0 auto;
+        }
+       .xpz_guangao{
+           width: 100%;
+            height: 100px;
+            background-color: #e0e0e0;
+            margin-top: 60px;
+        }
+       

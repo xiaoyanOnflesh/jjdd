@@ -1,0 +1,44 @@
+     a{
+         text-decoration: none !important;
+     }
+     #fixed {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            z-index: 100;
+            border-bottom: 2px solid orangered;
+            display: none;
+            box-shadow: 0 0 5px black;
+        }
+
+        #fixed>div {
+            width: 1200px;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #fixed form {
+            height: 40px;
+            position: absolute;
+            top: 5px;
+            left: 300px;
+            display: flex;
+        }
+
+        #fixed form input {
+            width: 600px;
+            height: 100%;
+            outline: none;
+        }
+
+        #fixed form button {
+            width: 60px;
+            height: 100%;
+            background-color: #F10215;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+        }

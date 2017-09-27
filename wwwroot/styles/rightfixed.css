@@ -1,0 +1,94 @@
+.rightfixed {
+            width: 7px;
+            height: 100%;
+            background-color: #7A6E6E;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 100;
+        }
+
+        .rightfixed i,
+        em {
+            position: absolute;
+        }
+
+        .rightfixed i {
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            height: 100%;
+            background-color: #7A6E6E;
+            border-radius: 3px;
+        }
+
+        .rightfixed em {
+            width: 100px;
+            right: -100px;
+            height: 100%;
+            top: 0;
+            z-index: -10;
+            background-color: #C81623;
+            border-radius: 3px;
+            padding-left: 5px;
+        }
+
+        .rightfixed>div>div {
+            width: 35px;
+            height: 35px;
+            background-color: #7A6E6E;
+            margin: 1px;
+            margin-right: 0;
+            border-radius: 3px;
+            position: relative;
+            z-index: 100;
+            color: white;
+            line-height: 35px;
+        }
+
+        .rightfixed_top {
+            position: absolute;
+            right: 0;
+            top: 45%;
+        }
+        .xuebi_right{
+            background-image: url('../img/toolbars.png');
+            background-size: 460px 350px;
+            color: white;
+        }
+        .xuebi_right_1{
+            background-position:-88px -175px; 
+        }
+        .xuebi_right_2{
+           background-position: -50px 0;
+        }
+        .xuebi_right_3{
+            background-position:-50px -50px; 
+        }
+        .xuebi_right_4{
+            background-position: -50px -100px; 
+        }
+        .xuebi_right_5{
+            background-position:-188px -150px; 
+        }
+        .xuebi_right_6{
+            background-position:-50px -150px; 
+        }
+
+        .xuebi_right_7{
+            background-position:-50px -251px; 
+        } 
+        .xuebi_right_8{
+            background-position:-50px -298px; 
+        } 
+        .rightfixed_top a,.rightfixed_bottom a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .rightfixed_bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
